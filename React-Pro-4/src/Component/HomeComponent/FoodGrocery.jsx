@@ -2,7 +2,7 @@ import React from "react";
 
 const FoodGrocery = () => {
   return (
-    <div className="h-screen ">
+    <div className="">
       <div className="flex items-center justify-center py-8 mt-10">
         <h1 className="text-black font-semibold text-4xl">Food & Grocery</h1>
       </div>
@@ -118,9 +118,11 @@ const FoodGrocery = () => {
           </p>
         </div>
       </div>
-      <button className="mt-5 ml-150  rounded-full bg-black flex justify-center items-center w-3xs py-2 text-sm text-white transition hover:bg-orange-500">
-        Explore
-      </button>
+      <div className="flex justify-center items-center">
+        <button className="mt-5 cursor-pointer rounded-full bg-black w-3xs py-2 text-sm text-white transition hover:bg-orange-500">
+          Explore
+        </button>
+      </div>
     </div>
   );
 };
