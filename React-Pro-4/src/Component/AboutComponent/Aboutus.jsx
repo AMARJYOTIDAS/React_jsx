@@ -6,7 +6,7 @@ const Aboutus = () => {
     <>
       <div className="">
         <div className=" flex flex-col justify-between items-center gap-3 font-sans">
-          <img src={img13} alt="" />
+          <img src={img13} alt="" className=" rounded-4xl " />
           {/* <img
           src="https://www.debsaipl.in/static/media/food.af1d5305eccbdb1454c5.png"
           alt=""
@@ -15,8 +15,10 @@ const Aboutus = () => {
           src="https://www.debsaipl.in/static/media/delivery.d4a37197ac1d532642b5.png"
           alt=""
         /> */}
-          <h1 className="font-bold text-3xl">What Customers Say About us</h1>
-          <p className="max-w-4xl text-center font-normal text-black">
+          <h1 className="font-bold text-3xl mt-4">
+            What Customers Say About us
+          </h1>
+          <p className="max-w-4xl text-center font-light text-2xl text-black mt-4 mb-4">
             "What Customers Say About Us" reflects genuine feedback,
             highlighting our commitment to excellence, reliable service, and
             customer satisfaction through testimonials from those who trust and

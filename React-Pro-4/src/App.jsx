@@ -8,6 +8,8 @@ import Lookatour_num from "./Component/HomeComponent/Lookatour_num";
 
 import MobileApp from "./Component/Common/MobileApp";
 import Aboutus from "./Component/HomeComponent/Aboutus";
+import Feedback from "./Component/HomeComponent/Feedback ";
+import Subscribe from "./Component/AboutComponent/Subscribe";
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Lookatour_num />
       <MobileApp />
       <Aboutus />
+      <Feedback />
+      <Subscribe />
     </>
   );
 }
