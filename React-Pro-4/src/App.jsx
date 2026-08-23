@@ -7,9 +7,11 @@ import Service from "./Component/HomeComponent/Service";
 import Lookatour_num from "./Component/HomeComponent/Lookatour_num";
 
 import MobileApp from "./Component/Common/MobileApp";
-import Aboutus from "./Component/HomeComponent/Aboutus";
+import Aboutus from "./Component/AboutComponent/Aboutus";
 import Feedback from "./Component/HomeComponent/Feedback ";
 import Subscribe from "./Component/AboutComponent/Subscribe";
+import ZeroSection from "./Component/HomeComponent/ZeroSection";
+import BottomZero from "./Component/Common/BottomZero";
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
       <Aboutus />
       <Feedback />
       <Subscribe />
+      <ZeroSection />
+      <BottomZero />
     </>
   );
 }

@@ -20,7 +20,7 @@ const Subscribe = () => {
           ></input>
           <button
             type="submit"
-            className="bg-green-600 w-40 h-10 rounded-2xl cursor-pointer hover:bg-green-300 text-2xl"
+            className="bg-green-600 w-40 h-10 rounded-2xl cursor-pointer hover:bg-green-900 text-2xl"
           >
             Subscribe
           </button>
