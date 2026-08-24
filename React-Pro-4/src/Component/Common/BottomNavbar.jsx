@@ -13,10 +13,18 @@ const BottomNavbar = () => {
           </span>
         </div>
         <div className="flex justify-center items-center list-none gap-22 text-black font-semibold">
-          <li className="cursor-pointer hover:text-green-400">Home</li>
-          <li className="cursor-pointer hover:text-green-400">About</li>
-          <li className="cursor-pointer hover:text-green-400">Services</li>
-          <li className="cursor-pointer hover:text-green-400">Contact</li>
+          <a href="/">
+            <li className="cursor-pointer hover:text-green-400">Home</li>
+          </a>
+          <a href="#food">
+            <li className="cursor-pointer hover:text-green-400">About</li>
+          </a>
+          <a href="#service">
+            <li className="cursor-pointer hover:text-green-400">Services</li>
+          </a>
+          <a href="#contact">
+            <li className="cursor-pointer hover:text-green-400">Contact</li>
+          </a>
         </div>
       </div>
     </>

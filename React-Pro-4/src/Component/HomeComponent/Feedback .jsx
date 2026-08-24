@@ -32,7 +32,7 @@ const Feedback = () => {
     },
   ];
   return (
-    <div>
+    <section id="feedback">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-20 px-10">
         {data.map((item, i) => (
           <div key={i} className="bg-white p-5 rounded-lg shadow-2xl">
@@ -56,7 +56,7 @@ const Feedback = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

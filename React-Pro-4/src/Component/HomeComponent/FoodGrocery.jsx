@@ -2,13 +2,13 @@ import React from "react";
 
 const FoodGrocery = () => {
   return (
-    <div className="">
+    <section id="food">
       <div className="flex items-center justify-center py-8 mt-10">
         <h1 className="text-black font-semibold text-4xl">Food & Grocery</h1>
       </div>
-      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-9 px-4 gap-4 font-semibold ">
+      <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-9 px-4 gap-4 font-semibold shadow-lg shadow-gray-900 ">
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800
          transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl gap-9 py-2 flex flex-col items-center"
         >
           <img
@@ -25,7 +25,7 @@ const FoodGrocery = () => {
           </p>
         </div>
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg gap-9 py-2
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800 gap-9 py-2
         transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center "
         >
           <img
@@ -42,7 +42,7 @@ const FoodGrocery = () => {
           </p>
         </div>
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg gap-9 py-2
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800 gap-9 py-2
         transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center "
         >
           <img
@@ -60,7 +60,7 @@ const FoodGrocery = () => {
         </div>
 
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg gap-9 py-2
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800 gap-9 py-2
         transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl flex flex-col items-center "
         >
           <img
@@ -76,7 +76,7 @@ const FoodGrocery = () => {
           </p>
         </div>
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800
          transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl gap-9 py-2 flex flex-col items-center "
         >
           <img
@@ -94,7 +94,7 @@ const FoodGrocery = () => {
           </p>
         </div>
         <div
-          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg 
+          className="group relative overflow-hidden rounded-2xl bg-white shadow-lg shadow-gray-800
         transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl gap-9 py-2 flex flex-col items-center"
         >
           <img
@@ -123,7 +123,7 @@ const FoodGrocery = () => {
           Explore
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 
