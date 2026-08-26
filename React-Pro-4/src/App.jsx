@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TopNavbar from "./Component/Common/TopNavbar";
 import BottomNavbar from "./Component/Common/BottomNavbar";
 import HeroSection from "./Component/HomeComponent/HeroSection";
@@ -16,18 +15,20 @@ import BottomZero from "./Component/Common/BottomZero";
 function App() {
   return (
     <>
-      <TopNavbar />
-      <BottomNavbar />
-      <HeroSection />
-      <FoodGrocery />
-      <Service />
-      <Lookatour_num />
-      <MobileApp />
-      <Aboutus />
-      <Feedback />
-      <Subscribe />
-      <ZeroSection />
-      <BottomZero />
+      <div className="wrap">
+        <TopNavbar />
+        <BottomNavbar />
+        <HeroSection />
+        <FoodGrocery />
+        <Service />
+        <Lookatour_num />
+        <MobileApp />
+        <Aboutus />
+        <Feedback />
+        <Subscribe />
+        <ZeroSection />
+        <BottomZero />
+      </div>
     </>
   );
 }
