@@ -14,7 +14,9 @@ const MobileApp = () => {
           Enjoy a user-friendly experience with simple, intuitive interfaces
           designed for everyone.
         </p>
-        <img src={img12} alt="" className="max-w-3xs" />
+        <a href="https://play.google.com/store/games?hl=en_IN" target="">
+          <img src={img12} alt="" className="max-w-3xs hover:cursor-pointer" />
+        </a>
       </div>
       <img
         src="https://www.debsaipl.in/static/media/BestService.c0751e90e5b105bbcf4b.png"

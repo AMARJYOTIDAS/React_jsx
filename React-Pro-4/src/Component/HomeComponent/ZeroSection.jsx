@@ -1,4 +1,5 @@
 import React from "react";
+// import AboutPage from "../AboutComponent/aboutpage";
 import dev from "../../assets/dev.jpeg";
 import img from "../../assets/img12.png";
 import {
@@ -17,12 +18,16 @@ const ZeroSection = () => {
             Commercial Production Started And The Company Incorporated On
             February 22, 2003.
           </p>
-          <ul className="flex  gap-5">
+          <ul className="flex  gap-5 hover:cursor-pointer">
             <li>
-              <FaFacebook size={20} />
+              <a href="https://www.facebook.com" target="_blank">
+                <FaFacebook size={20} />
+              </a>
             </li>
             <li>
-              <FaInstagramSquare size={20} />
+              <a href="https://www.instagram.com › ..." target="_blank">
+                <FaInstagramSquare size={20} />
+              </a>
             </li>
             <li>
               <FaWhatsappSquare size={20} />
@@ -48,20 +53,25 @@ const ZeroSection = () => {
         </div>
         <div className="mt-5 flex flex-col  ">
           <h1 className="font-bold mb-4">Policies</h1>
-          <ul className="leading-9">
+          <ul className="leading-9 hover:cursor-pointer">
             <li>Terms & Conditions</li>
             <li>Refund & Cancellation Policy</li>
             <li>Privacy & Pricing Policy</li>
           </ul>
         </div>
-        <div className=" flex flex-col justify-between gap-4 max-w-2xs">
+        <div className=" flex flex-col justify-between gap-4 max-w-2xs mt-5">
           <h1 className="font-bold mb-4">Contact Info</h1>
           <p>
             Deb Online Shopping Store Plot No-1187, Taradapada, Purohitpur,
             Jagatsinghapur, Odisha, 754294 +91 81445 70016
             debdebasmitagrandbazar@gmail.com
           </p>
-          <img src={img} alt="playstore" className="w-40" />
+          <a
+            href="https://play.google.com/store/games?hl=en_IN"
+            target="_blank"
+          >
+            <img src={img} alt="playstore" className="w-40" />
+          </a>
         </div>
       </div>
     </section>
