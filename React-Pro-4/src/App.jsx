@@ -11,6 +11,7 @@ import Feedback from "./Component/HomeComponent/Feedback ";
 import Subscribe from "./Component/HomeComponent/Subscribe";
 import ZeroSection from "./Component/HomeComponent/ZeroSection";
 import BottomZero from "./Component/Common/BottomZero";
+import Starter from "./Component/HomeComponent/Starter";
 // import AboutPage from "./Component/AboutComponent/aboutpage";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -68,6 +69,7 @@ function App() {
         <BottomNavbar />
         <HeroSection />
         <FoodGrocery />
+        <Starter />
         <Service />
         <Lookatour_num />
         <MobileApp />
