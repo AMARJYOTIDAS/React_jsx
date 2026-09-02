@@ -55,13 +55,13 @@ const Starter = () => {
           {data.map((item, i) => (
             <div key={i}>
               <div
-                className=" flex flex-col justify-between items-center max-h-fit gap-3 px-0.5 py-4 shadow-gray-800 shadow-2xl
-               rounded-2xl hover:cursor-pointer transition-all hover:-translate-y-3 hover:shadow-2xl duration-500 ease-in-out object-cover"
+                className=" flex flex-col justify-between items-center max-h-fit gap-3 px-0.5 py-4 shadow-gray-800 shadow-2xl overflow-hidden
+               rounded-2xl hover:cursor-pointer transition duration-500  hover:-translate-y-3 hover:shadow-2xl ease-in-out object-cover"
               >
                 <img
                   src={item.img}
                   alt={item.alt}
-                  className=" h-120 w-120 transition-all duration-300 object-cover "
+                  className=" h-120 w-120 transition-transform duration-200 group-hover:scale-150 "
                 />
                 <h1 className="font-bold text-2xl">{item.header}</h1>
                 <p className="font-semibold">"{item.description}"</p>

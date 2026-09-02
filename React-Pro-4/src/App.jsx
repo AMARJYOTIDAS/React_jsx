@@ -12,12 +12,16 @@ import Subscribe from "./Component/HomeComponent/Subscribe";
 import ZeroSection from "./Component/HomeComponent/ZeroSection";
 import BottomZero from "./Component/Common/BottomZero";
 import Starter from "./Component/HomeComponent/Starter";
-// import AboutPage from "./Component/AboutComponent/aboutpage";
+import AboutPage from "./Component/AboutComponent/AboutPage";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // import HomePage from "./Component/AboutComponent/HomePage";
 // import ServicePage from "./Component/AboutComponent/ServicePage";
 // import ContactPage from "./Component/AboutComponent/ContactPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BotOffIcon } from "lucide-react";
+import ContactPage from "./Component/AboutComponent/ContactPage";
+import ServicePage from "./Component/AboutComponent/ServicePage";
 
 function App() {
   // const router = createBrowserRouter([
@@ -65,6 +69,8 @@ function App() {
   return (
     <>
       <div className="wrap">
+        {/* <BrowserRouter> */}
+        {/* <Routes> */}
         <TopNavbar />
         <BottomNavbar />
         <HeroSection />
@@ -78,7 +84,12 @@ function App() {
         <Subscribe />
         <ZeroSection />
         <BottomZero />
-        {/* <AboutPage /> */}
+
+        {/* <Route path="/AboutPage" element={<AboutPage />} />
+            <Route path="/ContactPage" element={<ContactPage />} />
+            <Route path="/ServicePage" element={<ServicePage />} /> */}
+        {/* </Routes> */}
+        {/* </BrowserRouter> */}
         {/* <RouterProvider router={router} /> */}
       </div>
     </>
