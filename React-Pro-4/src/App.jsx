@@ -15,14 +15,6 @@ import Starter from "./Component/HomeComponent/Starter";
 import AboutPage from "./Component/AboutComponent/AboutPage";
 // import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-// import HomePage from "./Component/AboutComponent/HomePage";
-// import ServicePage from "./Component/AboutComponent/ServicePage";
-// import ContactPage from "./Component/AboutComponent/ContactPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { BotOffIcon } from "lucide-react";
-import ContactPage from "./Component/AboutComponent/ContactPage";
-import ServicePage from "./Component/AboutComponent/ServicePage";
-
 function App() {
   // const router = createBrowserRouter([
   //   {

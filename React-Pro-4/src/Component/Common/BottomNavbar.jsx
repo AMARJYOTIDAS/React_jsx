@@ -14,7 +14,7 @@ const BottomNavbar = () => {
           </span>
         </div>
         <div className="flex justify-center items-center list-none gap-22 text-black font-semibold">
-          <ul className="flex justify-center items-center gap-22 text-black font-semibold">
+          <ul className="flex justify-center items-center gap-18 text-black font-semibold ">
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
               <a href="/home">Home</a>
             </li>
@@ -24,12 +24,12 @@ const BottomNavbar = () => {
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
               <a href="#service">Service</a>
             </li>
-            <li>
+            <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
               <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-      </div> 
+      </div>
     </section>
   );
 };

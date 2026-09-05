@@ -61,7 +61,7 @@ const Starter = () => {
                 <img
                   src={item.img}
                   alt={item.alt}
-                  className=" h-120 w-120 transition-transform duration-200 group-hover:scale-150 "
+                  className=" h-120 w-120 transition-transform duration-700 hover:scale-110 "
                 />
                 <h1 className="font-bold text-2xl">{item.header}</h1>
                 <p className="font-semibold">"{item.description}"</p>

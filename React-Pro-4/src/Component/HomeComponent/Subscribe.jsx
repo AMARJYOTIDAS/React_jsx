@@ -16,7 +16,7 @@ const Subscribe = () => {
             type="email"
             placeholder="enter email"
             name="email"
-            className="w-3xs px-3  border-2 border-mist-300"
+            className="w-3xs px-3  border-2 border-mist-300 cursor-pointer"
           ></input>
           <button
             type="submit"
