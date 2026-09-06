@@ -1,6 +1,7 @@
 import React from "react";
 import secondimage from "../Assets/secondimage.jpeg";
 import { MoveDown } from "lucide-react";
+import { ArrowDownToLine } from "lucide-react";
 
 const DownloadApp = () => {
   return (
@@ -15,13 +16,20 @@ const DownloadApp = () => {
           access information instantaneously (no tedeous form, long calls, or
           administrative hassle) and securely
         </p>
-        <button className="mt-8 bg-blue-300 text-white px-8 py-1 rounded-full font-semibold hover:bg-blue-600 transition duration-300  border-b-blue-500 border-black cursor-pointer flex flex-col items-center">
-          <MoveDown size={20} />
+        <button
+          className="mt-8 bg-blue-500 text-white px-8 py-1 rounded-full font-semibold hover:bg-blue-600 transition duration-300
+         border-black drop-shadow-fuchsia-800 cursor-pointer flex flex-col items-center"
+        >
+          <ArrowDownToLine size={20} />
           Download
         </button>
       </div>
       <div className=" max-w-3xl">
-        <img src={secondimage} alt="secondimage" className="" />
+        <img
+          src={secondimage}
+          alt="secondimage"
+          className="rounded-2xl shadow-2xl shadow-blue-900"
+        />
       </div>
     </div>
   );

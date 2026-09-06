@@ -1,8 +1,6 @@
-import { useState } from "react";
-import react from "react";
-// import './App.css'
-import Health from "./Components/Health";
-import OurServices from "./Components/Ourservice";
+import TopNavbar from "./Common/TopNavbar";
+import HeroSection from "./Components/HeroSection";
+import OurService from "./Components/OurService";
 import MorServices from "./Components/MorServices";
 import DownloadApp from "./Components/DownloadApp";
 import FeedBack from "./Components/FeedBack";
@@ -11,15 +9,17 @@ import Footer from "./Components/Footer";
 
 function App() {
   return (
-    <>
-      <Health />
-      <OurServices />
+    <div className="wrap-anywhereu bg-blue-200">
+      ;
+      <TopNavbar />
+      <HeroSection />
+      <OurService />
       <MorServices />
       <DownloadApp />
       <FeedBack />
       <Article />
       <Footer />
-    </>
+    </div>
   );
 }
 

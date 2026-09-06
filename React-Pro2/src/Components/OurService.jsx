@@ -40,41 +40,46 @@ const OurServices = () => {
   ];
 
   return (
-    <div className=" py-6 bg-blue-50">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="font-bold text-4xl text-center ">Our services</h1>
-        <p className="mt-8 text-[#7D7987] text-lg leading-relaxed text-center max-">
-          We provide to you the best choiches for you. Adjust it to your health
-          needs and make sure your undergo treatment <br /> with our highly
-          qualified doctors you can consult with us which type of service is
-          suitable for your health
-        </p>
+    <section id="ourservice">
+      <div className=" py-6 bg-blue-200">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="font-bold text-4xl text-center ">Our services</h1>
+          <p className="mt-8 text-[#7D7987] text-lg leading-relaxed text-center max-">
+            We provide to you the best choiches for you. Adjust it to your
+            health needs and make sure your undergo treatment <br /> with our
+            highly qualified doctors you can consult with us which type of
+            service is suitable for your health
+          </p>
 
-        <div className="grid grid-cols-3 gap-24 mt-20">
-          {data.map((item, i) => (
-            <div key={i} className="bg-white px-12 py-8 space-y-6 rounded-xl">
-              <img
-                src={item.img}
-                alt={item.heading}
-                className="size-16 object-cover"
-              />
-              <h1 className="font-bold text-2xl">{item.heading}</h1>
-              <p className="text-[#7D7987] text-base">{item.para}</p>
-            </div>
-          ))}
+          <div className="grid grid-cols-3 gap-24 mt-20">
+            {data.map((item, i) => (
+              <div
+                key={i}
+                className="bg-white px-12 py-8 space-y-6 rounded-xl shadow-2xl shadow-blue-950 cursor-pointer"
+              >
+                <img
+                  src={item.img}
+                  alt={item.heading}
+                  className=" object-cover"
+                />
+                <h1 className="font-bold text-2xl">{item.heading}</h1>
+                <p className="text-[#7D7987] text-base">{item.para}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className=" flex items-center justify-center">
+          <button
+            className="mt-8 bg-blue-500 text-white px-8 py-3 
+        rounded-full font-semibold hover:bg-blue-600 transition duration-300 
+        shadow-2xl shadow-blue-900 border-black cursor-pointer "
+          >
+            Learn more
+          </button>
         </div>
       </div>
-
-      <div className=" flex items-center justify-center">
-        <button
-          className="mt-8 bg-blue-300 text-white px-8 py-3 
-        rounded-full font-semibold hover:bg-blue-600 transition duration-300 
-         border-b-blue-500 border-black cursor-pointer "
-        >
-          Learn more
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -14,7 +14,10 @@ const Article = () => {
       </div>
       <section className="font-mono">
         <div className=" flex flex-row  justify-between mt-10 ">
-          <div className=" flex flex-col items-center gap-1 border-1.5 rounded-2xl p-2.5 border-mauve-800 shadow-2xs shadow-gray-800">
+          <div
+            className=" flex flex-col items-center gap-1 border-1.5
+           rounded-2xl border-mauve-800 shadow-2xl shadow-gray-800"
+          >
             <img src={img7} alt="img7" className="h-64 w-96 rounded-3xl " />
             <h2 className=" font-semibold ">
               Disease detection, check up in the laboratory
@@ -27,7 +30,7 @@ const Article = () => {
               Read More
             </button>
           </div>
-          <div className="flex flex-col items-center gap-1 shadow-2xs shadow-gray-800 border-mauve-800 rounded-2xl p-2.5">
+          <div className="flex flex-col items-center gap-1 shadow-2xl shadow-gray-800 border-mauve-800 rounded-2xl">
             <img src={img8} alt="img7" className="h-64 w-96 rounded-3xl " />
             <h2 className="font-serif font-semibold ">
               Disease detection, check up in the laboratory
@@ -40,7 +43,7 @@ const Article = () => {
               Read More
             </button>
           </div>
-          <div className="flex flex-col items-center gap-1 shadow-2xs shadow-gray-800 border-mauve-800 rounded-2xl p-2.5">
+          <div className="flex flex-col items-center gap-1 shadow-2xl shadow-gray-800 border-mauve-800 rounded-2xl">
             <img src={img9} alt="img7" className="h-64 w-96 rounded-3xl " />
             <h2 className=" font-semibold ">
               Disease detection, check up in the laboratory

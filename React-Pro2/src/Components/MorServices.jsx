@@ -4,7 +4,11 @@ const MorServices = () => {
   return (
     <div className="max-w-7xl mx-auto py-5 flex items-center justify-between gap-20">
       <div className="">
-        <img src={firstimage} alt="firstimage" className="" />
+        <img
+          src={firstimage}
+          alt="firstimage"
+          className="rounded-2xl shadow-2xl shadow-blue-900"
+        />
       </div>
       <div className=" flex flex-col  justify-between gap-5  items-baseline">
         <h1 className="text-4xl font-bold text-gray-900  items-center">
@@ -19,7 +23,7 @@ const MorServices = () => {
           on mobile and online for everyone. To us, it’s not just work. We take
           pride in the solutions we deliver
         </div>
-        <button className="mt-8 bg-blue-300 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300  border-b-blue-500 border-black cursor-pointer">
+        <button className="mt-8 bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-200  border-b-blue-500 border-black cursor-pointer">
           Learn More
         </button>
       </div>
