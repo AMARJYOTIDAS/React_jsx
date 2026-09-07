@@ -1,6 +1,6 @@
 import React from "react";
-// import NavLink from "react-router-dom";
-// import { Link } from "react-router-dom";
+import NavLink, { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 const BottomNavbar = () => {
   return (
     <section id="BottomNavbar">
@@ -16,16 +16,36 @@ const BottomNavbar = () => {
         <div className="flex justify-center items-center list-none gap-22 text-black font-semibold">
           <ul className="flex justify-center items-center gap-18 text-black font-semibold ">
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
-              <a href="/home">Home</a>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Home
+              </NavLink>
             </li>
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
-              <a href="#about">About</a>
+              <NavLink
+                to="/AboutPage"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                About
+              </NavLink>
             </li>
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
-              <a href="#service">Service</a>
+              <NavLink
+                to="/ServicePage"
+                className={({ isActive }) => (isActive ? "active:link" : "")}
+              >
+                Service
+              </NavLink>
             </li>
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out">
-              <a href="#contact">Contact</a>
+              <NavLink
+                to="/ContactPage"
+                className={({ isActive }) => (isActive ? "active:link" : "")}
+              >
+                Contact
+              </NavLink>
             </li>
           </ul>
         </div>
