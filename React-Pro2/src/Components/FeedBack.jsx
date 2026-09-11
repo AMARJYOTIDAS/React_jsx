@@ -1,5 +1,7 @@
 import React from "react";
 import ceo from "../Assets/ceo.png";
+import { MoveRight } from "lucide-react";
+import { MoveLeft } from "lucide-react";
 
 const FeedBack = () => {
   return (
@@ -23,8 +25,13 @@ const FeedBack = () => {
           administrative hassle) and securely”
         </p>
       </div>
-      <div className="text-3xl text-white  w-46 mx-auto mt-8">
-        <button className=" cursor-pointer ">← . . . . →</button>
+      <div className=" flex items-center gap-15 text-3xl text-white  w-46 mx-auto mt-8">
+        <button className=" cursor-pointer ">
+          <MoveLeft size={25} />
+        </button>
+        <button className="cursor-pointer">
+          <MoveRight size={25} />
+        </button>
       </div>
     </div>
   );

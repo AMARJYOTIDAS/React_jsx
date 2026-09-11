@@ -37,7 +37,7 @@ const Lookatour_num = () => {
         {data.map((item, i) => (
           <div
             key={i}
-            className="bg-white px-12 py-8 space-y-6 rounded-xl flex flex-col items-center"
+            className="bg-white px-12 py-8 space-y-6 rounded-xl flex flex-col items-center shadow-2xl shadow-gray-800"
           >
             <img
               src={item.img}

@@ -3,7 +3,10 @@ import React from "react";
 const Subscribe = () => {
   return (
     <div>
-      <div className="flex flex-col items-center justify-between gap-5 py-2 mt-15 shadow-2xl shadow-zinc-950 transition-all duration-200 scrollbar-track-orange-500">
+      <div
+        className="flex flex-col items-center justify-between gap-5 py-2 mt-15 shadow-2xl shadow-zinc-950
+       transition-all duration-200 scrollbar-track-orange-500"
+      >
         <h1 className="font-light text-5xl ">Subscribe to Our Newsletter</h1>
         <p className="text-center w-3xl font-medium py-5">
           Subscribe to our newsletter and stay updated with the latest news,

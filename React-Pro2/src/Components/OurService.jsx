@@ -44,7 +44,7 @@ const OurServices = () => {
       <div className=" py-6 bg-blue-200">
         <div className="max-w-7xl mx-auto">
           <h1 className="font-bold text-4xl text-center ">Our services</h1>
-          <p className="mt-8 text-[#7D7987] text-lg leading-relaxed text-center max-">
+          <p className="mt-8 text-gray-900 text-lg leading-relaxed text-center max-">
             We provide to you the best choiches for you. Adjust it to your
             health needs and make sure your undergo treatment <br /> with our
             highly qualified doctors you can consult with us which type of
