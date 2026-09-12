@@ -1,6 +1,11 @@
 import React from "react";
 
 const BottomNavbar = () => {
+  function scrollBar(id) {
+    document.getElementById(id).scrollIntoView({
+      behavior: "smooth",
+    });
+  }
   return (
     <section id="BottomNavbar">
       <div className="flex justify-between items-center gap-2 px-16 mt-5">
@@ -12,8 +17,8 @@ const BottomNavbar = () => {
             />
           </span>
         </div>
-        <div className="flex justify-center items-center list-none gap-22 text-black font-semibold">
-          <ul className="flex justify-center items-center gap-18 text-black font-semibold ">
+        <nav className="flex justify-center items-center list-none gap-22 text-black font-semibold">
+          <ul className="flex justify-center items-center gap-15 text-black font-semibold ">
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out cursor-pointer">
               Home
             </li>
@@ -26,18 +31,18 @@ const BottomNavbar = () => {
             <li className="hover:text-[#2d8014] transition duration-300 ease-in-out cursor-pointer">
               Contact
             </li>
-          </ul>
-        </div>
-      </div>
-      <span className=" flex justify-end px-16 mt-3 font-bold ">
-        <button
-          type="submit"
-          className="hover:bg-green-500 bg-green-600  rounded-full px-6 text-center
+            <li>
+              <button
+                type="submit"
+                className="hover:bg-green-400 bg-green-600  rounded-full px-8 text-center
            cursor-pointer shadow-2xl shadow-green-900"
-        >
-          Login
-        </button>
-      </span>
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </section>
   );
 };
