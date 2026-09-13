@@ -9,7 +9,10 @@ import {
 
 const TopNavbar = () => {
   return (
-    <div className="bg-[#191c1f] px-16 py-2 flex justify-between items-center">
+    <div
+      className="bg-[#191c1f] px-16 py-2 flex justify-between items-center constant
+      fixed top-0 left-0 w-full  shadow-md z-50"
+    >
       <div className="flex justify-center items-center gap-2">
         <p className="text-white flex items-center gap-3">
           <span className="text-[#2d8014]">

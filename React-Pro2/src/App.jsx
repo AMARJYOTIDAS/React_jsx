@@ -6,10 +6,11 @@ import DownloadApp from "./Components/DownloadApp";
 import FeedBack from "./Components/FeedBack";
 import Article from "./Components/Article";
 import Footer from "./Components/Footer";
+import Snapp from "./Components/Snapp";
 
 function App() {
   return (
-    <div className="wrap-anywhereu bg-blue-200">
+    <div className="wrap-anywhere bg-blue-200">
       ;
       <TopNavbar />
       <HeroSection />
@@ -17,6 +18,7 @@ function App() {
       <MorServices />
       <DownloadApp />
       <FeedBack />
+      <Snapp />
       <Article />
       <Footer />
     </div>

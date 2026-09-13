@@ -4,7 +4,6 @@ const FoodGrocery = () => {
   return (
     <section id="food">
       <div className="flex items-center justify-center py-8 mt-10">
-        <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} />
         <h1 className="text-black font-semibold text-4xl">Food & Grocery</h1>
       </div>
       <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 py-9 px-4 gap-4 font-semibold shadow-lg shadow-gray-900 ">

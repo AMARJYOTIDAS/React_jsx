@@ -14,11 +14,11 @@ const FeedBack = () => {
         <div className=" py-0">
           <img src={ceo} alt="ceo" className=" h-24 w-24  mt-4 rounded-full" />
         </div>
+
         <div className=" flex flex-1 flex-col items-center justify-center text-white">
           <h3>Edward Newgate</h3>
           <h3>Founder Circle</h3>
         </div>
-        <div className=""></div>
         <p className="text-center italic font-sans text-lg max-w-3xl text-shadow-indigo-50 text-white">
           “Our dedicated patient engagement app and web portal allow you to
           access information instantaneously (no tedeous form, long calls, or
