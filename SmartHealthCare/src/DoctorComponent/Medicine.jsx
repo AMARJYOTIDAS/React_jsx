@@ -2,7 +2,7 @@ import React from "react";
 
 const Medicine = () => {
   return (
-    <section id="medicine">
+    <section>
       <div> find the right medicine</div>
     </section>
   );

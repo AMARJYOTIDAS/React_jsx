@@ -7,6 +7,7 @@ import FeedBack from "./Components/FeedBack";
 import Article from "./Components/Article";
 import Footer from "./Components/Footer";
 import Snapp from "./Components/Snapp";
+import FindDisease from "./DoctorComponent/FindDisease";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <DownloadApp />
       <FeedBack />
       <Snapp />
+      <FindDisease />
       <Article />
       <Footer />
     </div>

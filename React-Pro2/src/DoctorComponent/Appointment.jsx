@@ -1,7 +1,6 @@
 import React from "react";
-
 const Appointment = () => {
-  return <div></div>;
+  return <section id="appoinment"></section>;
 };
 
 export default Appointment;
