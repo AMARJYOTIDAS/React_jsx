@@ -1,3 +1,4 @@
+import BottomNavbar from "./Common/BottomNavbar";
 import TopNavbar from "./Common/TopNavbar";
 import HeroSection from "./Components/HeroSection";
 import OurService from "./Components/OurService";
@@ -8,11 +9,12 @@ import Article from "./Components/Article";
 import Footer from "./Components/Footer";
 import Snapp from "./Components/Snapp";
 import FindDisease from "./DoctorComponent/FindDisease";
+import { Bot } from "lucide-react";
 
 function App() {
   return (
     <div className="wrap-anywhere bg-blue-200">
-      ;
+      <BottomNavbar />
       <TopNavbar />
       <HeroSection />
       <OurService />

@@ -2,9 +2,9 @@ const TopNavbar = () => {
   return (
     <section
       id="navbar"
-      className=" text-black font-semibold bg-blue-200 fixed top-0 left-0 w-full shadow-md z-50"
+      className=" text-black font-semibold bg-blue-200 fixed left-0 w-full shadow-md z-50"
     >
-      <nav className="flex items-center justify-between mt-5 px-20 py-2">
+      <nav className="flex items-center justify-between mt-2 px-20">
         <div className="flex item-center gap-2">
           <span className="text-white font-bold text-lg w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
             T
@@ -32,7 +32,7 @@ const TopNavbar = () => {
         </ul>
         <div className=" px-1 ml-10 text-white">
           <button
-            className="cursor-pointer font-bold bg-blue-600 px-2 py-2 "
+            className="cursor-pointer font-bold bg-blue-600 px-2 py-2 rounded-full "
             type="submit"
           >
             Login
