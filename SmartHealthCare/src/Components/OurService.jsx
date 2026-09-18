@@ -43,7 +43,7 @@ const OurServices = () => {
     <section id="ourservice">
       <div className=" py-6 bg-blue-200">
         <div className="max-w-7xl mx-auto">
-          <h1 className="font-bold text-4xl text-center ">Our services</h1>
+          <h1 className="font-bold text-4xl text-center ">Our Services</h1>
           <p className="mt-8 text-gray-900 text-lg leading-relaxed text-center max-">
             We provide to you the best choiches for you. Adjust it to your
             health needs and make sure your undergo treatment <br /> with our
@@ -51,7 +51,7 @@ const OurServices = () => {
             service is suitable for your health
           </p>
 
-          <div className="grid grid-cols-3 gap-24 mt-20">
+          <div className="grid grid-cols-3 lg:grid-cols-3 sm:grid-cols-2 gap-24 mt-10">
             {data.map((item, i) => (
               <div
                 key={i}

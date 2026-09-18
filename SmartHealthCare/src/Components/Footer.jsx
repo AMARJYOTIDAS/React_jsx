@@ -17,7 +17,7 @@ const Footer = () => {
   ];
   return (
     <div>
-      <footer className="relative max-w-7xl overflow-hidden mx-auto from-sky-400 bg-blue-500 px-10 py-14 sm:px-16 mb-6 rounded-3xl">
+      <footer className="relative max-w-7xl overflow-hidden mx-auto from-sky-400 bg-blue-700 px-10 py-14 sm:px-16 mb-6 rounded-3xl">
         {/* Decorative dot grid, bottom-left */}
         <div className="absolute bottom-8 left-8 grid grid-cols-4 gap-1.5">
           {Array.from({ length: 16 }).map((_, i) => (

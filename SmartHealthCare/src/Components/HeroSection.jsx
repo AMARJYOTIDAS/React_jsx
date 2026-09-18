@@ -4,7 +4,7 @@ import DownloadApp from "./DownloadApp";
 const HeroSection = () => {
   return (
     <section id="herosection" className="bg-blue-200">
-      <div className="m-30 mt-10 bg-blue-200 text-black">
+      <div className="m-15 mt-10 bg-blue-200 text-black">
         <div className="flex items-center justify-between max-w-7xl mx-auto px-6 py-16">
           <div className="max-w-lg  rounded-lg">
             {/* //bg-[url(src/assets/secondimage.jpeg)] */}

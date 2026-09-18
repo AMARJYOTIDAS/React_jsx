@@ -7,9 +7,8 @@ import DownloadApp from "./Components/DownloadApp";
 import FeedBack from "./Components/FeedBack";
 import Article from "./Components/Article";
 import Footer from "./Components/Footer";
-import Snapp from "./Components/Snapp";
 import FindDisease from "./DoctorComponent/FindDisease";
-import { Bot } from "lucide-react";
+import Medicines from "./Common/Medicine";
 
 function App() {
   return (
@@ -20,9 +19,9 @@ function App() {
       <OurService />
       <MorServices />
       <DownloadApp />
-      <FeedBack />
-      <Snapp />
       <FindDisease />
+      <Medicines />
+      <FeedBack />
       <Article />
       <Footer />
     </div>

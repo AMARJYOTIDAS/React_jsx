@@ -1,5 +1,5 @@
 import React from "react";
-import Medicine from "./Medicine";
+import Medicine from "../Common/Medicine";
 const Appointment = () => {
   return (
     <section id="appoinment">

@@ -5,7 +5,7 @@ import { MoveLeft } from "lucide-react";
 
 const FeedBack = () => {
   return (
-    <div className="max-w-7xl mx-auto py-5 mt-15 bg-blue-500 rounded-4xl mb-10">
+    <div className="max-w-7xl mx-auto py-5 mt-15 bg-blue-600 rounded-4xl mb-10">
       <h1 className="text-2xl font-semibold text-gray-50 mt-8 mb-8 items-center justify-center text-center">
         What our customer are saying
       </h1>

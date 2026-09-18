@@ -5,14 +5,14 @@ import img9 from "../Assets/img9.png";
 
 const Article = () => {
   return (
-    <div className="max-w-7xl mx-auto py-5 mt-15 rounded-4xl mb-10">
+    <div className="max-w-7xl mx-auto py-5 mt-8 rounded-4xl mb-10">
       <div className=" flex flex-col items-center gap-8 mt-15 px-7">
         <h1 className="text-olive-900 text-2xl font-bold m- mx-auto">
           Check out our latest article
         </h1>
         <div className=" border-2 bg-black w-36 mx-auto"></div>
       </div>
-      <section className="font-mono">
+      <section className="font-mono lg:flex-1 sm:flex-2">
         <div className=" flex flex-row  justify-between mt-10 ">
           <div
             className=" flex flex-col items-center gap-1 border-1.5
