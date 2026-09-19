@@ -4,61 +4,121 @@ import img8 from "../Assets/img8.png";
 import img9 from "../Assets/img9.png";
 
 const Article = () => {
+  const data = [
+    {
+      img: img7,
+      header: "Disease detection, check up in the laboratory",
+      description:
+        "In this case, the role of the health laboratory is very important  to do a disease detection",
+    },
+    {
+      img: img8,
+      header: "Disease detection, check up in the laboratory",
+      description:
+        "In this case, the role of the health laboratory is very important  to do a disease detection",
+    },
+    {
+      img: img9,
+      header: "Disease detection, check up in the laboratory",
+      description:
+        "In this case, the role of the health laboratory is very important  to do a disease detection",
+    },
+  ];
   return (
-    <div className="max-w-7xl mx-auto py-5 mt-8 rounded-4xl mb-10">
+    <section className="font-mono mb-5 min-h-screen">
       <div className=" flex flex-col items-center gap-8 mt-15 px-7">
-        <h1 className="text-olive-900 text-2xl font-bold m- mx-auto">
+        <h1 className="text-olive-900 text-2xl font-bold mx-auto">
           Check out our latest article
         </h1>
         <div className=" border-2 bg-black w-36 mx-auto"></div>
       </div>
-      <section className="font-mono lg:flex-1 sm:flex-2">
-        <div className=" flex flex-row  justify-between mt-10 ">
+      <div
+        className="
+  grid
+  grid-cols-1
+  sm:grid-cols-2
+  lg:grid-cols-3
+  gap-6
+  sm:gap-7
+  lg:gap-8
+  mt-10
+  px-4
+  sm:px-6
+  lg:px-10
+  max-w-7xl
+  mx-auto
+"
+      >
+        {data.map((item, i) => (
           <div
-            className=" flex flex-col items-center gap-1 border-1.5
-           rounded-2xl border-mauve-800 shadow-2xl shadow-gray-800"
+            key={i}
+            className="
+        group
+        w-full
+        overflow-hidden
+        rounded-2xl
+        border border-white/30
+        bg-white
+        backdrop-blur-xl
+        shadow-lg shadow-black/10
+        transition-all duration-300
+        hover:-translate-y-2
+        hover:shadow-2xl
+        hover:bg-white/30
+      "
           >
-            <img src={img7} alt="img7" className="h-64 w-96 rounded-3xl " />
-            <h2 className=" font-semibold ">
-              Disease detection, check up in the laboratory
-            </h2>
-            <p className="font-semibold font-5 max-w-3xs items-center ml-10 ">
-              In this case, the role of the health laboratory is very important
-              to do a disease detection...
-            </p>
-            <button className=" text-blue-400  items-center mt-5 cursor-pointer">
-              Read More
-            </button>
+            {/* Image */}
+            <div className="w-full overflow-hidden p-4 sm:p-5 lg:p-6 py-1">
+              <img
+                src={item.img}
+                alt={item.header}
+                className="
+            w-full
+            h-48
+            sm:h-52
+            lg:h-56
+            object-cover
+            transition-transform
+            duration-500
+            group-hover:scale-110
+          "
+              />
+            </div>
+
+            {/* Content */}
+            <div className="p-4 sm:p-5 lg:p-6">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">
+                {item.header}
+              </h2>
+
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+
+              <button
+                className="
+            mt-5
+            px-4 sm:px-5
+            py-2
+            rounded-full
+            bg-white/30
+            border border-white/40
+            backdrop-blur-md
+            text-sm sm:text-base
+            font-semibold
+            text-gray-800
+            transition-all duration-300
+            hover:bg-white/50
+            hover:scale-105
+          "
+              >
+                Read More →
+              </button>
+            </div>
           </div>
-          <div className="flex flex-col items-center gap-1 shadow-2xl shadow-gray-800 border-mauve-800 rounded-2xl">
-            <img src={img8} alt="img7" className="h-64 w-96 rounded-3xl " />
-            <h2 className="font-serif font-semibold ">
-              Disease detection, check up in the laboratory
-            </h2>
-            <p className=" font-5 max-w-3xs items-center ml-10 ">
-              In this case, the role of the health laboratory is very important
-              to do a disease detection...
-            </p>
-            <button className=" text-blue-400  items-center mt-5 cursor-pointer">
-              Read More
-            </button>
-          </div>
-          <div className="flex flex-col items-center gap-1 shadow-2xl shadow-gray-800 border-mauve-800 rounded-2xl">
-            <img src={img9} alt="img7" className="h-64 w-96 rounded-3xl " />
-            <h2 className=" font-semibold ">
-              Disease detection, check up in the laboratory
-            </h2>
-            <p className="font-semibold font-5 max-w-3xs items-center ml-10 ">
-              In this case, the role of the health laboratory is very important
-              to do a disease detection...
-            </p>
-            <button className=" text-blue-400  items-center mt-5 cursor-pointer">
-              Read More
-            </button>
-          </div>
-        </div>
-      </section>
-    </div>
+        ))}
+      </div>
+    </section>
   );
 };
 
