@@ -1,6 +1,8 @@
+import { NavLink, Link } from "react-router-dom";
+
 const TopNavbar = () => {
   return (
-    <section
+    <header
       id="navbar"
       className=" text-black font-semibold bg-blue-200 fixed left-0 w-full shadow-md z-50"
     >
@@ -12,34 +14,59 @@ const TopNavbar = () => {
           <h3>Dr.Strange</h3>
         </div>
 
-        <ul className=" flex justify-end ml-auto gap-8 font-medium text-shadow-2xs ">
-          <li className="cursor-pointer  hover:text-blue-600 transition rounded-sm">
-            <a href="#" />
-            Home
+        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <li>
+            <NavLink
+              to="/"
+              Ś
+              className={({ isActive }) =>
+                `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+              }
+            >
+              Home
+            </NavLink>
           </li>
-          <li className="cursor-pointer hover:text-blue-600 transition">
-            <a href="#ourservice">Find a docter</a>
+          <li>
+            <NavLink
+              to="/appointment"
+              className={({ isActive }) =>
+                `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+              }
+            >
+              Appointment
+            </NavLink>
           </li>
-          <li className="cursor-pointer hover:text-blue-600 transition">
-            Apps
+          <li>
+            <NavLink
+              to="/medicine"
+              className={({ isActive }) =>
+                `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+              }
+            >
+              Medicine
+            </NavLink>
           </li>
-          <li className="cursor-pointer  hover:text-blue-600 transition">
-            Testimonials
-          </li>
-          <li className="cursor-pointer  hover:text-blue-600 transition">
-            About us
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+              }
+            >
+              About
+            </NavLink>
           </li>
         </ul>
         <div className=" px-1 ml-10 text-white">
-          <button
+          <Link
+            to="#"
             className="cursor-pointer font-bold bg-blue-600 px-2 py-2 rounded-full "
-            type="submit"
           >
             Login
-          </button>
+          </Link>
         </div>
       </nav>
-    </section>
+    </header>
   );
 };
 

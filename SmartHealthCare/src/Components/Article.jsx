@@ -25,7 +25,10 @@ const Article = () => {
     },
   ];
   return (
-    <section className="font-mono mb-5 min-h-screen">
+    <section
+      className="font-mono mb-5 min-h-screen 
+      >"
+    >
       <div className=" flex flex-col items-center gap-8 mt-15 px-7">
         <h1 className="text-olive-900 text-2xl font-bold mx-auto">
           Check out our latest article
@@ -34,20 +37,19 @@ const Article = () => {
       </div>
       <div
         className="
-  grid
-  grid-cols-1
-  sm:grid-cols-2
-  lg:grid-cols-3
-  gap-6
-  sm:gap-7
-  lg:gap-8
-  mt-10
-  px-4
-  sm:px-6
-  lg:px-10
-  max-w-7xl
-  mx-auto
-"
+        grid
+        grid-cols-1
+        sm:grid-cols-2
+        lg:grid-cols-3
+        gap-6
+        sm:gap-7
+        lg:gap-8
+        mt-10
+        px-4
+        sm:px-6
+        lg:px-10
+        max-w-7xl
+        mx-auto"
       >
         {data.map((item, i) => (
           <div

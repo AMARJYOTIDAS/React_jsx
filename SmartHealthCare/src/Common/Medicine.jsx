@@ -111,7 +111,7 @@ function Medicines() {
       medicine.purpose.toLowerCase().includes(search.toLowerCase()),
   );
   return (
-    <section className="min-h-screen bg-blue-300 px-6 py-10">
+    <section className="min-h-screen bg-blue-200 px-6 py-10">
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-gray-800"> Medicines </h1>
