@@ -3,8 +3,8 @@ import TopNavbar from "./Component/Common/TopNavbar";
 import BottomNavbar from "./Component/Common/BottomNavbar";
 import BottomZero from "./Component/Common/BottomZero";
 import { Outlet } from "react-router-dom";
-import HeroSection from "./Component/HomeComponent/HeroSection";
-import ZeroSection from "./Component/HomeComponent/ZeroSection";
+import HeroSection from "./Component/Common/HeroSection";
+import ZeroSection from "./Component/Common/ZeroSection";
 
 function Root() {
   return (
